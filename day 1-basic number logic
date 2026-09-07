@@ -1,0 +1,57 @@
+#check wether the number is even or odd
+"""
+num=int(input("Enter a number:"))
+if num%2==0:
+    print("even")
+else:
+    print("odd")
+"""
+#check wether the number is positive negative or zero
+"""
+num=int(input("Enter a number:"))
+if num>0:
+    print("positive")
+elif num<0:
+    print("negative")
+else:
+    print("zero")
+"""
+#largest of two numbers
+"""
+a,b=map(int,input("Enter a number:").split())
+if a>b:
+    print(a)
+else:
+    print(b)
+"""
+#largest of three numbers
+"""
+a,b,c=map(int,input("Enter a number:").split())
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+print("Largest number:", largest)
+"""
+#swap two numbers
+"""
+a,b=map(int,input("Enter a number:").split(","))
+temp=a
+a=b
+b=temp
+print(a,b)
+"""
+#check wether the year is leap year or not
+"""
+year=int(input("Enter a number:"))
+if year%400==0:
+    print("leap year")
+elif year%100==0:
+    print("non leap year")
+elif year%4==0:
+    print("leap year")
+else:
+    print("non leap year")
+"""
