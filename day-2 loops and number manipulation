@@ -1,0 +1,101 @@
+#reverse a number
+"""
+num=int(input("Enter a number:"))
+reverse=0
+while num>0:
+    digit=num%10
+    reverse=reverse*10+digit
+    num=num//10
+print(reverse)
+"""
+#count the digits in a number
+"""
+num=int(input("Enter a nunber:"))
+count=0
+while num>0:
+    count+=1
+    num=num//10
+print(count)
+"""
+#sum of digits
+"""
+num=int(input("Enter a number:"))
+sum=0
+while num>0:
+    digit=num%10
+    sum=sum+digit
+    num=num//10
+print(sum)
+"""
+#first digit of a number
+"""
+num=int(input("Enter a number:"))
+while num>9:
+    num=num//10
+print(num)
+"""
+#check wether the number is palindrome or not 
+num = int(input("Enter a number: "))
+
+original = num
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+"""
+#armstrong number
+"""
+num = int(input("Enter a number: "))
+
+digits = len(str(num))
+sum = 0
+temp = num
+
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** digits
+    temp //= 10
+
+if sum == num:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+"""
+#strong number
+"""
+num = int(input("Enter a number: "))
+temp = num
+sum = 0
+
+while num > 0:
+    digit = num % 10
+
+    fact = 1
+    for i in range(1, digit + 1):
+        fact = fact * i
+
+    sum = sum + fact
+    num = num // 10
+
+if sum == temp:
+    print("Strong number")
+else:
+    print("Not a Strong number")
+""
+
+#automorphic number
+num=int(input("Enter a number:"))
+digits=len(str(num))
+square=num*num
+last_digit=square%digit**10
+if last_digit==num:
+    print("automorphic number")
+else:
+    print("not automorphic number")
