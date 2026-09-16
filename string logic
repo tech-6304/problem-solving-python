@@ -1,0 +1,55 @@
+#reverse a string
+"""
+def reverse_str(name):
+    rev=""
+    for i in name:
+        rev=i+rev
+    return rev
+name=input("Enter a name:")
+x=reverse_str(name)
+print(x)
+"""
+#palindrome string
+"""
+str=input("Enter a name:")
+original=str
+rev=""
+for i in str:
+    rev=i+rev
+if original==rev:
+    print("palindrome")
+else:
+    print("not palindrome")
+"""
+#count vowels and consonants
+"""
+str=input("enter a name:")
+vowels=0
+consonants=0
+for i in str:
+    if i in "aeiouAEIOU":
+        vowels+=1
+    else:
+        consonants+=1 
+print(vowels)
+print(consonants)
+"""
+#count words
+"""
+name=input("enter a sen:")
+count=1
+for i in name:
+    if i==" ":
+        count+=1
+print(count)
+"""
+#chracter frequency
+"""
+str=input("Enter a number:")
+freq={}
+for i in str:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
