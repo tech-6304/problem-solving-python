@@ -1,0 +1,114 @@
+#maximum element in the array
+"""
+arr=list(map(int,input("Enter numbers:").split(",")))
+maximum=arr[0]
+for i in arr:
+    if i>maximum:
+        maximum=i
+print(maximum)
+"""
+#minimum element in the arary
+"""
+arr=list(map(int,input("Enter a number:").split(",")))
+minimum=arr[0]
+for i in arr:
+    if i<minimum:
+        min=i
+print(minimum)
+"""
+#second largest element
+"""
+arr=list(map(int,input("Enter a number:").split(",")))
+max=arr[0]
+sec_max=arr[1]
+for i in arr:
+    if i>max:
+        max=i
+for i in arr:
+    if i!=max and i>sec_max:
+        sec_max=i
+print(max)
+print(sec_max)
+"""
+#reverse the array
+"""
+list=[1,2,3,45,8]
+reverse=[]
+for i in range(len(list)-1,-1,-1):
+    reverse.append(list[i])
+print(reverse)
+"""
+#remove duplicates
+"""
+list=[1,3,6,89,3,6]
+unique=[]
+for i in list:
+    if i not in unique:
+        unique.append(i)
+print(unique)
+"""
+#check wether a number is power of "2"
+"""
+num=int(input("Enter a number:"))
+while num%2==0:
+    num=num//2
+if num==1:
+    print("power of 2")
+else:
+    print("not the power of 2")
+"""
+#digital root
+"""
+num=int(input("Enter a number:"))
+while num>=10:
+    sum=0
+    while num>0:
+        digit=num%10
+        sum+=digit
+        num=num//10
+    num=sum
+print(sum)    
+"""
+#sum of even digits
+"""
+num=int(input("Enter a number:"))
+sum=0
+while num>0:
+    digit=num%10
+    if digit%2==0:
+        sum+=digit
+    num=num//10
+print(sum)
+"""
+#sum of odd digits
+"""
+num=int(input("Enter a number:"))
+sum=0
+while num>0:
+    digit=num%10
+    if digit%2!=0:
+        sum+=digit
+    num=num//10
+print(sum)
+"""
+#find largest digit
+"""
+num=int(input("Enter a number:"))
+digits=[]
+while num>0:
+    digit=num%10
+    list.append(digit)
+    num=num//10
+print(max(digits))
+"""
+#find smallest digit
+"""
+num=int(input("Enter a number:"))
+smallest=9
+while num>0:
+    digit=num%10
+    if digit<smallest:
+        smallest=digit
+    num=num//10
+print(smallest)
+"""
